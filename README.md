@@ -10,3 +10,10 @@ En tant que|Je veux|Afin de|Taches|Priorite
 => Moniteur|voir, creer, desactiver des écoles|gestion appli|-route -formulaire -controler|
 => Moniteur|voir, creer, desactiver des exams|gestion appli|-route -formulaire - controler|
 => Admin |creer des users avec password, role, et autres|gestion appli| -route spec - formulaire -controler|
+
+## Liste des routes
+
+> Role
+- post('/role/create', 'store($request)')
+- put('/role/update'), 'update($request)')
+- get('/roles' 'index()')
