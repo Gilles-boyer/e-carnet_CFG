@@ -5,6 +5,13 @@
 
 En tant que|Je veux|Afin de|Taches|Priorite
 :---|:---|:---|:---|:---
-Parent|voir de façon sécurisé le carnet de mon enfant|voir ces date de stage et suivre son évolution|Créer un lien securisé pour afficher les jours d'ecole et le niveau et point validation en cours|Fort lien sécurisé
-
-
+=> Parent et Enfant|voir de façon sécurisé le carnet de mon enfant|voir ces date de stage et suivre son évolution|
+-créer un controler spécifique pour cripter lors de la création de l'enfant
+-créer un lien securisé
+-afficher une vue avec les infos de l'enfant
+|Fort lien sécurisé
+=> Moniteur|voir, créer, desactiver des enfants|gérer l'attribution des enfants et lié avec des activités (ecoles et exam)|
+-creation des routes
+-creation de formulaire
+-creation controler
+|moyen
