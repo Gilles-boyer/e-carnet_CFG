@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Exam;
 use App\Models\Activitie;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -22,7 +23,8 @@ class ActivitieFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'question' => $this->faker->sentence(6, true),
+            'exam_id'  => Exam::all()->random()->id,
         ];
     }
 }

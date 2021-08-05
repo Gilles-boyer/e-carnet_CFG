@@ -22,7 +22,7 @@ class ExamFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'label' => $this->faker->jobTitle(),
         ];
     }
 }

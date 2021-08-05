@@ -2,7 +2,9 @@
 
 namespace Database\Factories;
 
+use App\Models\Children;
 use App\Models\ChildrenSchool;
+use App\Models\School;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ChildrenSchoolFactory extends Factory
@@ -22,7 +24,10 @@ class ChildrenSchoolFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'children_id' => Children::all()->random()->id,
+            'School_id'   => School::all()->random()->id,
+            'date_school' => $this->faker->date('Y-m-d', $max = 'now'),
+            'here' => true,
         ];
     }
 }

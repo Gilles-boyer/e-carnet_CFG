@@ -22,7 +22,7 @@ class SchoolFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'label' => "EFK ".$this->faker->monthName()." ".$this->faker->year(),
         ];
     }
 }
