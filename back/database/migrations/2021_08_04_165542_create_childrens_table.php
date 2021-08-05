@@ -24,6 +24,7 @@ class CreateChildrensTable extends Migration
             $table->date('register_data');
             $table->string('size')->nullable();
             $table->text('note')->Nullable();
+            $table->string('token');
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
