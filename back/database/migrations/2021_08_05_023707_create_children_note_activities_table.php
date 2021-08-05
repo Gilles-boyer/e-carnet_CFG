@@ -15,10 +15,10 @@ class CreateChildrenNoteActivitiesTable extends Migration
     {
         Schema::create('children_note_activities', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('note_id')->constrained();
+            $table->foreignId('grade_id')->constrained();
             $table->foreignId('children_id')->constrained();
             $table->foreignId('activitie_id')->constrained();
-            $table->test('comment');
+            $table->text('comment');
             $table->date('date');
             $table->timestamps();
         });

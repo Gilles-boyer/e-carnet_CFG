@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Children_school;
+use App\Models\ChildrenSchool;
 use Illuminate\Http\Request;
 
 class ChildrenSchoolController extends Controller
@@ -41,10 +41,10 @@ class ChildrenSchoolController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Children_school  $children_school
+     * @param  \App\Models\ChildrenSchool  $childrenSchool
      * @return \Illuminate\Http\Response
      */
-    public function show(Children_school $children_school)
+    public function show(ChildrenSchool $childrenSchool)
     {
         //
     }
@@ -52,10 +52,10 @@ class ChildrenSchoolController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Children_school  $children_school
+     * @param  \App\Models\ChildrenSchool  $childrenSchool
      * @return \Illuminate\Http\Response
      */
-    public function edit(Children_school $children_school)
+    public function edit(ChildrenSchool $childrenSchool)
     {
         //
     }
@@ -64,10 +64,10 @@ class ChildrenSchoolController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Children_school  $children_school
+     * @param  \App\Models\ChildrenSchool  $childrenSchool
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Children_school $children_school)
+    public function update(Request $request, ChildrenSchool $childrenSchool)
     {
         //
     }
@@ -75,10 +75,10 @@ class ChildrenSchoolController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Children_school  $children_school
+     * @param  \App\Models\ChildrenSchool  $childrenSchool
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Children_school $children_school)
+    public function destroy(ChildrenSchool $childrenSchool)
     {
         //
     }

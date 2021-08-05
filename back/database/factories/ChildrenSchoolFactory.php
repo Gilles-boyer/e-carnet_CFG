@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Children_school;
+use App\Models\ChildrenSchool;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ChildrenSchoolFactory extends Factory
@@ -12,7 +12,7 @@ class ChildrenSchoolFactory extends Factory
      *
      * @var string
      */
-    protected $model = Children_school::class;
+    protected $model = ChildrenSchool::class;
 
     /**
      * Define the model's default state.
