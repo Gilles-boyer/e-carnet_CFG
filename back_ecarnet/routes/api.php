@@ -19,5 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+//all route for Ecole
 Route::get('/ecoles/encours', [EcoleController::class, 'index']);
+Route::delete('/ecole/delete', [EcoleController::class, 'destroy']);
 

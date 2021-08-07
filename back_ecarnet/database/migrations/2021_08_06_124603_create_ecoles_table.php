@@ -17,6 +17,7 @@ class CreateEcolesTable extends Migration
             $table->id();
             $table->string('name_school');
             $table->date('date_ecole');
+            $table->boolean('delete')->default(false);
             $table->timestamps();
         });
     }
