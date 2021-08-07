@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\EcolesEnCoursCollection;
 use App\Models\Ecole;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,9 @@ class EcoleController extends Controller
      */
     public function index()
     {
-        //
+        $EcolesEnCours = Ecole::all()->where("date_ecole", ">=", now());
+
+        return EcolesEnCoursCollection::collection($EcolesEnCours);
     }
 
     /**
